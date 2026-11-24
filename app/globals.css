@@ -1,0 +1,14 @@
+@import "tailwindcss";
+:root { --rose:#e86f8d; --ink:#2d2530; }
+* { box-sizing:border-box; }
+html { background:#fff8fb; }
+body { margin:0; color:var(--ink); background:linear-gradient(145deg,#fff8fb 0%,#fff 52%,#f9f5ff 100%); font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; min-height:100vh; }
+button,input { font:inherit; }
+button { cursor:pointer; }
+button:disabled { cursor:default; }
+.card { background:rgba(255,255,255,.86); border:1px solid rgba(232,111,141,.16); box-shadow:0 12px 40px rgba(75,35,55,.07); backdrop-filter:blur(10px); }
+.welcome-card { animation:modalIn .45s cubic-bezier(.2,.8,.2,1); }
+.result-card { animation:modalIn .35s cubic-bezier(.2,.8,.2,1); }
+.heart-pop { animation:heartPop 1.5s ease-in-out infinite; }
+@keyframes modalIn { from { opacity:0; transform:translateY(22px) scale(.96); } to { opacity:1; transform:none; } }
+@keyframes heartPop { 0%,100% { transform:scale(1) rotate(0); } 50% { transform:scale(1.12) rotate(-4deg); } }
