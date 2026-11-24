@@ -152,14 +152,14 @@ export default function Home() {
           <p className="mt-2 text-sm leading-6 text-gray-600">“{currentQuote}”</p>
           </section>
 
-        <footer className="py-7 text-center text-xs text-gray-400">Made with love, especially for Gargi ❤️</footer>
+        <footer className="py-7 text-center text-xs text-gray-400">Made with love, especially for Shona❤️</footer>
       </div>
 
       {showWelcome && (
         <div className="fixed inset-0 z-30 flex items-center justify-center bg-[#3d2632]/25 p-5 backdrop-blur-sm">
           <div className="welcome-card w-full max-w-sm rounded-[2rem] bg-white p-7 text-center shadow-2xl">
             <div className="heart-pop mx-auto mb-4 text-5xl">❤️</div>
-            <p className="text-2xl font-bold text-gray-900">Hello Gargi,</p>
+            <p className="text-2xl font-bold text-gray-900">Hey Shona,</p>
             <p className="mt-1 text-xl font-medium text-gray-700">How are you today?</p>
             <p className="mx-auto mt-5 max-w-xs text-sm leading-6 text-gray-500">Let’s log your medication for today, together. 🌷</p>
             <p className="mt-3 text-xs font-semibold text-rose-400">{todayLabel()}</p>
@@ -187,7 +187,7 @@ export default function Home() {
 
       {result === 'complete' ? (
         <>
-          <p className="text-2xl font-bold">All done, Gargi! ❤️</p>
+          <p className="text-2xl font-bold">All done, Shona! ❤️</p>
 
           <p className="mt-3 text-sm leading-6 text-gray-600">
             {quote}
