@@ -10,5 +10,15 @@ button:disabled { cursor:default; }
 .welcome-card { animation:modalIn .45s cubic-bezier(.2,.8,.2,1); }
 .result-card { animation:modalIn .35s cubic-bezier(.2,.8,.2,1); }
 .heart-pop { animation:heartPop 1.5s ease-in-out infinite; }
+.mood-button { min-height:74px; }
+.selected-mood { border-color:rgba(232,111,141,.65); background:#fff1f5; box-shadow:0 8px 20px rgba(232,111,141,.12); transform:translateY(-2px); }
+.need-me-button { border:1px solid rgba(232,111,141,.14); border-radius:1rem; background:#fffafb; padding:.75rem .55rem; font-size:.72rem; font-weight:700; color:#6b5962; transition:all .2s ease; }
+.need-me-button:hover { transform:translateY(-2px); border-color:rgba(232,111,141,.35); background:#fff1f5; color:#e05f80; }
+.garden { overflow:hidden; position:relative; }
+.garden::after { content:""; display:block; height:2px; margin-top:6px; border-radius:999px; background:rgba(155,106,90,.18); }
+.garden-flower { display:flex; align-items:center; justify-content:center; width:38px; height:38px; font-size:25px; line-height:1; }
+.garden-flower.grown { animation:flowerGrow .45s cubic-bezier(.2,.8,.2,1) both; }
+.garden-flower.empty { color:rgba(232,111,141,.3); font-size:28px; }
 @keyframes modalIn { from { opacity:0; transform:translateY(22px) scale(.96); } to { opacity:1; transform:none; } }
 @keyframes heartPop { 0%,100% { transform:scale(1) rotate(0); } 50% { transform:scale(1.12) rotate(-4deg); } }
+@keyframes flowerGrow { from { opacity:0; transform:scale(.2) translateY(12px); } 70% { transform:scale(1.15) translateY(-2px); } to { opacity:1; transform:scale(1) translateY(0); } }
